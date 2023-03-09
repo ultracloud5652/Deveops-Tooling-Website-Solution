@@ -58,7 +58,7 @@ sudo mkfs -t xfs /dev/webdata-vg/lv-opt
 
 ![format](https://user-images.githubusercontent.com/117458922/223457990-b9aa5cff-1447-4a9f-8e41-85c6cb435dc2.png)
 
-* We need to create mount points on /mnt directory for the logical volumes: Mount `lv-apps on /mnt/html` `lv-opt on /mnt/opt` `lv-logs on /mnt/logs`
+* We need to create mount points on /mnt directory for the logical volumes: Mount `lv-apps on /mnt/apps` `lv-opt on /mnt/opt` `lv-logs on /mnt/logs`
 
 ```
 sudo mkdir /mnt/apps
@@ -284,7 +284,7 @@ git clone https://github.com/darey-io/tooling.git
 * We need to install mysql client so as to be able to access our website can access our database server remotely.**
 
 ```
-$ sudo yum install mysql
+sudo yum install mysql
 ```
 
 * We will deploy the tooling website’s code to the Webserver and ensure that the `html` folder from the repository is deployed to `/var/www/html`
