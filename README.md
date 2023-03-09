@@ -61,7 +61,7 @@ sudo mkfs -t xfs /dev/webdata-vg/lv-opt
 * We need to create mount points on /mnt directory for the logical volumes: Mount `lv-apps on /mnt/html` `lv-opt on /mnt/opt` `lv-logs on /mnt/logs`
 
 ```
-sudo mkdir /mnt/html
+sudo mkdir /mnt/apps
 sudo mkdir /mnt/logs
 sudo mkdir /mnt/opt
 ```
@@ -288,8 +288,10 @@ $ sudo yum install mysql
 ```
 
 * We will deploy the tooling website’s code to the Webserver and ensure that the `html` folder from the repository is deployed to `/var/www/html`
-
+ 
+ change directory to tooling
 ```
+cd tooling
 sudo cp -R html/. /var/www/html
 ```
 
