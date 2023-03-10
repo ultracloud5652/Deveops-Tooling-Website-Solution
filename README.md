@@ -226,11 +226,11 @@ add following line
 ```
 sudo yum install httpd -y
 
-sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 
-sudo dnf install dnf-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm
+sudo dnf install dnf-utils http://rpms.remirepo.net/enterprise/remi-release-9.rpm
 
-sudo dnf module reset php
+sudo dnf module list php
 
 sudo dnf module enable php:remi-7.4
 
@@ -292,6 +292,7 @@ sudo yum install mysql
  change directory to tooling
 ```
 cd tooling
+
 sudo cp -R html/. /var/www/html
 ```
 
